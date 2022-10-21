@@ -173,24 +173,24 @@
         }
     </style> -->
 
-    <!-- EXPLICIT VS IMPLICIT GRID, ALIGNMENT -->
+    <!-- EXPLICIT VS IMPLICIT GRID, ALIGNMENT, MIN/MAX -->
     <style>
         .container{
-            width: 800px;
-            height: 600px;
+            width: 90%;
+            /* height: 600px; */
             background-color: #efefef;
             margin: auto;
             display: grid;
             /* grid-template-columns: repeat(2, 1fr); */
-            grid-template-columns: repeat(2, 150px);
-            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: min-content 1fr 1fr minmax(150px, 300px);
+            grid-template-rows: 150px 150px;
             /* grid-auto-flow: column;
             grid-auto-columns: 150px; */
             grid-gap: 1rem;
             /* justify-items: end;
             align-items: end; */
-            justify-content: space-evenly;
-            align-content: space-evenly;
+            /* justify-content: space-evenly;
+            align-content: space-evenly; */
         }
 
         .item{
@@ -230,9 +230,9 @@
         <div class="footer">Footer</div>
     </div> -->
 
-     <!-- EXPLICIT VS IMPLICIT GRID, ALIGNMENT -->
+     <!-- EXPLICIT VS IMPLICIT GRID, ALIGNMENT, MIN/MAX -->
     <div class="container">
-        <div class="item">item 1</div>
+        <div class="item">Lorem, ipsum dolor. item 1</div>
         <div class="item">item 2</div>
         <div class="item item-3">item 3</div>
         <div class="item">item 4</div>
