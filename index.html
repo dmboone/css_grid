@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
     <link rel="stylesheet" href="style.css">
+    <!-- GRID INTRO -->
     <!-- <style>
         .container{
             width: 800px;
@@ -86,7 +87,9 @@
             grid-column: 1 / span 2;
         }
     </style> -->
-    <style>
+
+    <!-- NAMING GRID ITEMS -->
+    <!-- <style>
         .container{
             width: 800px;
             height: 500px;
@@ -168,10 +171,32 @@
             /* grid-row: footer-start / footer-end; */
             grid-area: footer;
         }
+    </style> -->
 
+    <!-- EXPLICIT VS IMPLICIT GRID -->
+    <style>
+        .container{
+            width: 600px;
+            background-color: #efefef;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-flow: column;
+            grid-auto-columns: 150px;
+            grid-gap: 1rem;
+        }
+
+        .item{
+            font-size: 2rem;
+            background-color: royalblue;
+            color: #fff;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+     <!-- GRID INTRO -->
     <!-- <div class="container">
         <div class="item item-1">item 1</div>
         <div class="item item-2">item 2</div>
@@ -181,7 +206,8 @@
         <div class="item item-6">item 6</div>
     </div> -->
 
-    <div class="container">
+     <!-- NAMING GRID ITEMS -->
+    <!-- <div class="container">
         <div class="header">Header</div>
         <div class="sidebar">Sidebar</div>
         <div class="main">Main</div>
@@ -189,6 +215,18 @@
         <div class="box-2">Box 2</div>
         <div class="box-3">Box 3</div>
         <div class="footer">Footer</div>
+    </div> -->
+
+     <!-- EXPLICIT VS IMPLICIT GRID -->
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
     </div>
 </body>
 </html>
